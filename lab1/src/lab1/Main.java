@@ -6,6 +6,7 @@ import library.Driver;
 
 public class Main {
      
+     // основная процедура
     public static void main(String[] args) {
       
       String country = "СССР";
@@ -21,15 +22,18 @@ public class Main {
         in.close();
         
         var data = new Data();
-        
+        // фильтруем ввод пользователя
         switch (number) {
         case 1:
+        // вывести машины
           printCars(data.getAllCars());
           break;
         case 2:
+        // вывести водителей
           printDrivers(data.getDriversWithExperience(experience), experience);
           break;
         case 3:
+        // вывести машины из страны
           printCars(data.getCarsFromCountry(country));
           break;
         default:
@@ -37,7 +41,7 @@ public class Main {
         }
         
     }
-    
+    // вывод машин
     private static void printCars(Car[] cars) {
       System.out.println("Автомобили: ");
       for (int i = 0; i < cars.length; i++) {
@@ -47,6 +51,7 @@ public class Main {
         }
       }
     }
+    // вывод водителей
     private static void printDrivers(Driver[] drivers, int experience) {
       System.out.printf("Водители со стажем более %d лет: ", experience);
       System.out.println();

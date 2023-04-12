@@ -10,12 +10,14 @@ public class Data {
   Engine[] engines;
   Car[] cars;
   
+  // конктруктор
   public Data(){
     loadDrivers();
     loadEngines();
     loadCars();
   }
   
+  // загрузка водителей
   void loadDrivers(){
     this.drivers = new Driver[]{
         new Driver("Иванов И. П.", 20),
@@ -25,7 +27,7 @@ public class Data {
         new Driver("Кузнецова О.Ю.", 2)
         };
   }
-  
+  // загрузка двигателей
   void loadEngines() {
     this.engines = new Engine[]{
         new Engine("СССР", 60),
@@ -35,7 +37,7 @@ public class Data {
         new Engine("Китай", 120)
     };
   }
-  
+  // загрузка машин
   void loadCars() {
     var car1 = new Car("Москвич", "412", 1000);
     car1.setDriver(this.drivers[2]);
@@ -61,10 +63,12 @@ public class Data {
     this.cars = new Car[] {car1, car2, car3, car4, car5};
   }
   
+  // вывод машин
   public Car[] getAllCars() {
     return this.cars;
   };
   
+  // вывод опытных водителей
   public Driver[] getDriversWithExperience(int exp) {
     Driver[] filteredDrivers = new Driver[this.drivers.length];
     int j = 0;
@@ -77,6 +81,7 @@ public class Data {
     return filteredDrivers;
   }
   
+  // вывод машин по стране
   public Car[] getCarsFromCountry(String country) {
     Car [] filteredCars = new Car[this.cars.length];
     int j = 0;
