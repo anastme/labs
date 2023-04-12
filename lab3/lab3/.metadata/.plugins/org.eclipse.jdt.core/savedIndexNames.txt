@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+D:\UCHEBA\2 KURS\2 semestr\Технологии разработки ПО\лаб3\lab3\.metadata\.plugins\org.eclipse.jdt.core
+3799950770.index
+1865797976.index
+2645772219.index
