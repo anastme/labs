@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Students:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Students_jar</output-path>
+    <root id="archive" name="TRPO lab1.jar">
+      <element id="module-output" name="TRPO lab1" />
+    </root>
+  </artifact>
+</component>
